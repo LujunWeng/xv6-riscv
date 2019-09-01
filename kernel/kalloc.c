@@ -2,6 +2,13 @@
 // kernel stacks, page-table pages,
 // and pipe buffers. Allocates whole 4096-byte pages.
 
+/* LW's notes
+ * The point here the addresses here refer to physical addresses
+ * The beginning of Chapter 3.6 has a key description of how to 
+ * use kalloc to build a link between va and pa, althought there
+ * is no much details the link is built. 
+ **/
+
 #include "types.h"
 #include "param.h"
 #include "memlayout.h"
